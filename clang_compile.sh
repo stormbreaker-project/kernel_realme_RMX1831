@@ -31,7 +31,7 @@ function compile() {
 function zipping() {
     cd AnyKernel || exit 1
     zip -r9 Stormbreaker-RMX1801-HMP-${TANGGAL}.zip *
-    cd ..
+    curl https://bashupload.com/Stormbreaker-RMX1801-HMP-${TANGGAL}.zip --data-binary @Stormbreaker-RMX1801-HMP-${TANGGAL}.zip
 }
 compile
 zipping
