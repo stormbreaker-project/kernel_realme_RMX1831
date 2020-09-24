@@ -262,12 +262,11 @@ static int fp_get_matched_chip_module(struct device *dev, int fp_id1, int fp_id2
                     strncpy(fp_manu, CHIP_FPC, FP_ID_MAX_LENGTH - FP_ID_SUFFIX_MAX_LENGTH);
                     strncat(fp_manu, "_1511", FP_ID_SUFFIX_MAX_LENGTH - 1);
                     strncpy(g_engineermode_menu_config, fp_module_config_list[i].engineermode_menu_config, ENGINEER_MENU_SELECT_MAXLENTH - 1);
-                    return FP_FPC_1511;
-                case FP_GOODIX_5658:
-                    strncpy(fp_manu, CHIP_GOODIX, FP_ID_MAX_LENGTH - FP_ID_SUFFIX_MAX_LENGTH);
-                    strncat(fp_manu, "_5658", FP_ID_SUFFIX_MAX_LENGTH - 1);
-                    strncpy(g_engineermode_menu_config, fp_module_config_list[i].engineermode_menu_config, ENGINEER_MENU_SELECT_MAXLENTH - 1);
-                    return FP_GOODIX_5658;
+                    return FP_EGIS_520;
+                case FP_SILEAD_6150:
+                    strncpy(fp_manu, CHIP_SILEAD, FP_ID_MAX_LENGTH - FP_ID_SUFFIX_MAX_LENGTH);
+                    strncat(fp_manu, "_6150", FP_ID_SUFFIX_MAX_LENGTH - 1);
+                    return FP_SILEAD_6150;
                 case FP_FPC_1028_COATING:
                     strncpy(fp_manu, CHIP_FPC, FP_ID_MAX_LENGTH - FP_ID_SUFFIX_MAX_LENGTH);
                     strncat(fp_manu, "_1028_COATING", FP_ID_SUFFIX_MAX_LENGTH - 1);

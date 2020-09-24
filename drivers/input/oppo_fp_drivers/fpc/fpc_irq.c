@@ -112,15 +112,9 @@ struct vreg_config {
         int ua_load;
 };
 
-#if CONFIG_OPPO_FINGERPRINT_PROJCT == 18151
-static const struct vreg_config const vreg_conf[] = {
-        { "vdd_io", 3000000UL, 3000000UL, 6000, },
-};
-#else
 static const struct vreg_config const vreg_conf[] = {
         { "vdd_io", 1800000UL, 1800000UL, 6000, },
 };
-#endif
 
 struct fpc1020_data {
         struct device *dev;
