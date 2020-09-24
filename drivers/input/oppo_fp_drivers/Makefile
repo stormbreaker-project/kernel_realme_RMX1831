@@ -7,3 +7,4 @@ obj-y        += fpc/
 
 endif
 
+subdir-ccflags-y += -DCONFIG_OPPO_FINGERPRINT_PLATFORM=6771
